@@ -4,699 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoman Gebäudereinigung - Kontakt</title>
+    <meta name="description" content="Kontaktieren Sie Zoman Gebäudereinigung - Wählen Sie Ihren Ansprechpartner">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-gradient-onyx: linear-gradient(
-                to bottom right,
-                hsl(240, 1%, 25%) 3%,
-                hsl(0, 0%, 19%) 97%
-            );
-            --bg-gradient-jet: linear-gradient(
-                to bottom right,
-                hsla(240, 1%, 18%, 0.251) 0%,
-                hsla(240, 2%, 11%, 0) 100%
-            ), hsl(240, 2%, 13%);
-            --bg-gradient-red-1: linear-gradient(
-                to bottom right,
-                hsl(0, 100%, 65%) 0%,
-                hsla(0, 100%, 60%, 0) 50%
-            );
-            --bg-gradient-red-2: linear-gradient(
-                135deg,
-                hsla(0, 100%, 65%, 0.251) 0%,
-                hsla(0, 100%, 60%, 0) 59.86%
-            ), hsl(240, 2%, 13%);
-            --border-gradient-onyx: linear-gradient(
-                to bottom right,
-                hsl(0, 0%, 25%) 0%,
-                hsla(0, 0%, 25%, 0) 50%
-            );
-            --text-gradient-red: linear-gradient(
-                to right,
-                hsl(0, 100%, 65%),
-                hsl(0, 85%, 55%)
-            );
-
-            --jet: hsl(0, 0%, 22%);
-            --onyx: hsl(240, 1%, 17%);
-            --eerie-black-1: hsl(240, 2%, 13%);
-            --eerie-black-2: hsl(240, 2%, 12%);
-            --smoky-black: hsl(0, 0%, 7%);
-            --white-1: hsl(0, 0%, 100%);
-            --white-2: hsl(0, 0%, 98%);
-            --red-primary: hsl(0, 100%, 65%);
-            --red-secondary: hsl(0, 85%, 55%);
-            --light-gray: hsl(0, 0%, 84%);
-            --light-gray-70: hsla(0, 0%, 84%, 0.7);
-            --bittersweet-shimmer: hsl(0, 43%, 51%);
-
-            --ff-poppins: 'Poppins', sans-serif;
-
-            --fs-1: 24px;
-            --fs-2: 18px;
-            --fs-3: 17px;
-            --fs-4: 16px;
-            --fs-5: 15px;
-            --fs-6: 14px;
-            --fs-7: 13px;
-            --fs-8: 11px;
-
-            --fw-300: 300;
-            --fw-400: 400;
-            --fw-500: 500;
-            --fw-600: 600;
-
-            --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-            --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-            --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-            --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-            --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
-            --transition-1: 0.25s ease;
-            --transition-2: 0.5s ease-in-out;
-        }
-
-        body {
-            background: var(--smoky-black);
-            color: var(--white-2);
-            font-family: var(--ff-poppins);
-            font-size: var(--fs-6);
-            font-weight: var(--fw-400);
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 30px;
-        }
-
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 25px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .sidebar {
-            position: sticky;
-            top: 60px;
-            max-width: 350px;
-            width: 100%;
-            background: var(--eerie-black-2);
-            border: 1px solid var(--jet);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: var(--shadow-1);
-        }
-
-        .sidebar-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .avatar-box {
-            background: var(--bg-gradient-onyx);
-            border-radius: 20px;
-            padding: 15px;
-        }
-
-        .avatar-box img {
-            width: 80px;
-            border-radius: 15px;
-        }
-
-        .info-content {
-            text-align: center;
-        }
-
-        .name {
-            color: var(--white-2);
-            font-size: var(--fs-1);
-            font-weight: var(--fw-500);
-            letter-spacing: -0.25px;
-            margin-bottom: 10px;
-        }
-
-        .title {
-            background: var(--onyx);
-            color: var(--red-primary);
-            font-size: var(--fs-8);
-            font-weight: var(--fw-300);
-            width: max-content;
-            padding: 3px 12px;
-            border-radius: 8px;
-            margin: 0 auto;
-        }
-
-        .info_more-btn {
-            position: relative;
-            background: var(--border-gradient-onyx);
-            color: var(--red-primary);
-            font-size: var(--fs-8);
-            font-weight: var(--fw-300);
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition-1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .info_more-btn:hover,
-        .info_more-btn:focus {
-            background: var(--bg-gradient-red-1);
-        }
-
-        .info_more-btn span {
-            display: block;
-        }
-
-        .info_more-btn ion-icon {
-            font-size: 18px;
-        }
-
-        .sidebar-info_more {
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: var(--transition-2);
-        }
-
-        .sidebar.active .sidebar-info_more {
-            opacity: 1;
-            max-height: 500px;
-        }
-
-        .separator {
-            width: 100%;
-            height: 1px;
-            background: var(--jet);
-            margin: 20px 0;
-        }
-
-        .contacts-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .contact-item .icon-box {
-            position: relative;
-            background: var(--border-gradient-onyx);
-            color: var(--red-primary);
-            width: 30px;
-            height: 30px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            box-shadow: var(--shadow-1);
-            z-index: 1;
-        }
-
-        .contact-item .icon-box::before {
-            content: "";
-            position: absolute;
-            inset: 1px;
-            background: var(--eerie-black-1);
-            border-radius: inherit;
-            z-index: -1;
-        }
-
-        .contact-item .icon-box ion-icon {
-            --ionicon-stroke-width: 35px;
-        }
-
-        .contact-info {
-            flex: 1;
-        }
-
-        .contact-title {
-            color: var(--light-gray-70);
-            font-size: var(--fs-8);
-            text-transform: uppercase;
-            margin-bottom: 2px;
-        }
-
-        .contact-info :is(.contact-link, address) {
-            color: var(--white-2);
-            font-size: var(--fs-7);
-            font-style: normal;
-        }
-
-        .contact-link {
-            text-decoration: none;
-            transition: var(--transition-1);
-        }
-
-        .contact-link:hover,
-        .contact-link:focus {
-            color: var(--red-primary);
-        }
-
-        .main-content {
-            flex: 1;
-            max-width: 750px;
-            width: 100%;
-            background: var(--eerie-black-2);
-            border: 1px solid var(--jet);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: var(--shadow-1);
-        }
-
-        .navbar {
-            margin-bottom: 30px;
-        }
-
-        .navbar-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
-        }
-
-        .navbar-link {
-            color: var(--light-gray);
-            font-size: var(--fs-8);
-            font-weight: var(--fw-500);
-            padding: 10px 15px;
-            background: transparent;
-            border: none;
-            border-radius: 14px;
-            cursor: pointer;
-            transition: var(--transition-1);
-            text-transform: uppercase;
-        }
-
-        .navbar-link:hover,
-        .navbar-link:focus {
-            color: var(--red-primary);
-        }
-
-        .navbar-link.active {
-            background: var(--bg-gradient-red-1);
-            color: var(--white-1);
-        }
-
-        .article-title {
-            color: var(--white-2);
-            font-size: var(--fs-1);
-            font-weight: var(--fw-600);
-            margin-bottom: 30px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        .article-title::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background: var(--text-gradient-red);
-            border-radius: 3px;
-        }
-
-        .h3 {
-            font-size: var(--fs-3);
-            font-weight: var(--fw-500);
-        }
-
-        .contact-buttons {
-            display: grid;
-            gap: 25px;
-        }
-
-        .contact-card {
-            background: var(--border-gradient-onyx);
-            border-radius: 14px;
-            padding: 1px;
-            box-shadow: var(--shadow-2);
-            transition: var(--transition-1);
-        }
-
-        .contact-card:hover {
-            box-shadow: var(--shadow-3);
-            transform: translateY(-5px);
-        }
-
-        .contact-card-header {
-            background: var(--bg-gradient-jet);
-            padding: 25px;
-            border-radius: 14px 14px 0 0;
-            text-align: center;
-        }
-
-        .contact-card-header .icon-box {
-            position: relative;
-            background: var(--border-gradient-onyx);
-            color: var(--red-primary);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 32px;
-            margin: 0 auto 15px;
-            box-shadow: var(--shadow-1);
-        }
-
-        .contact-card-header .icon-box::before {
-            content: "";
-            position: absolute;
-            inset: 1px;
-            background: var(--eerie-black-1);
-            border-radius: inherit;
-            z-index: -1;
-        }
-
-        .contact-card-header h3 {
-            color: var(--white-2);
-            margin-bottom: 5px;
-        }
-
-        .contact-card-header .role {
-            color: var(--red-primary);
-            font-size: var(--fs-8);
-            font-weight: var(--fw-300);
-            text-transform: uppercase;
-        }
-
-        .contact-card-body {
-            background: var(--eerie-black-1);
-            padding: 25px;
-            border-radius: 0 0 14px 14px;
-        }
-
-        .contact-card-body p {
-            color: var(--light-gray);
-            font-size: var(--fs-6);
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .contact-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--border-gradient-onyx);
-            color: var(--red-primary);
-            font-size: var(--fs-6);
-            font-weight: var(--fw-500);
-            padding: 12px 24px;
-            border-radius: 14px;
-            text-decoration: none;
-            transition: var(--transition-1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-btn::before {
-            content: "";
-            position: absolute;
-            inset: 1px;
-            background: var(--bg-gradient-jet);
-            border-radius: inherit;
-            z-index: -1;
-            transition: var(--transition-1);
-        }
-
-        .contact-btn:hover {
-            background: var(--bg-gradient-red-1);
-            color: var(--white-1);
-        }
-
-        .contact-btn:hover::before {
-            background: var(--bg-gradient-red-2);
-        }
-
-        .contact-btn ion-icon {
-            font-size: 20px;
-            --ionicon-stroke-width: 50px;
-        }
-
-        .support-info {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .support-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--light-gray);
-            font-size: var(--fs-7);
-        }
-
-        .support-item ion-icon {
-            color: var(--red-primary);
-            font-size: 18px;
-        }
-
-        .support-item a {
-            color: var(--white-2);
-            text-decoration: none;
-            transition: var(--transition-1);
-        }
-
-        .support-item a:hover {
-            color: var(--red-primary);
-        }
-
-        .support-btn {
-            width: 100%;
-            justify-content: center;
-        }
-
-        @media (max-width: 1024px) {
-            main {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .sidebar {
-                position: relative;
-                top: 0;
-                max-width: 100%;
-            }
-
-            .main-content {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-
-            .sidebar,
-            .main-content {
-                padding: 20px;
-            }
-
-            .contact-card-header,
-            .contact-card-body {
-                padding: 20px;
-            }
-
-            .name {
-                font-size: var(--fs-2);
-            }
-
-            .article-title {
-                font-size: var(--fs-2);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .contact-btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .navbar-link {
-                flex: 1;
-                text-align: center;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./image-228x228.png" alt="Zoman Gebäudereinigung Logo" width="80">
-                </figure>
+    <!-- Floating particles -->
+    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 20%; animation-delay: 3s;"></div>
+    <div class="particle" style="left: 30%; animation-delay: 6s;"></div>
+    <div class="particle" style="left: 40%; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 50%; animation-delay: 5s;"></div>
+    <div class="particle" style="left: 60%; animation-delay: 8s;"></div>
+    <div class="particle" style="left: 70%; animation-delay: 4s;"></div>
+    <div class="particle" style="left: 80%; animation-delay: 7s;"></div>
+    <div class="particle" style="left: 90%; animation-delay: 1s;"></div>
 
-                <div class="info-content">
-                    <h1 class="name" title="Zoman Gebäudereinigung">Zoman Gebäudereinigung</h1>
-                    <p class="title">Ihr Partner für Sauberkeit</p>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">
+            <img src="image-228x228.png" alt="Zoman Logo">
+        </div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card">
+        <div class="header">
+            <div class="logo">
+                <img src="image-228x228.png" alt="Zoman Logo">
+            </div>
+            <div class="company-name">ZOMAN</div>
+            <div class="tagline">GEBÄUDEREINIGUNG</div>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">Wählen Sie Ihren Ansprechpartner</h2>
+            
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="user" class="card-icon"></i>
+                    </div>
+                    <h3 class="contact-card-name">Elyaagoubi</h3>
+                    <p class="contact-card-role">Inhaber</p>
+                    <p class="contact-card-desc">Kontaktieren Sie unseren Geschäftsführer direkt für alle geschäftlichen Anfragen und Partnerschaften.</p>
+                    <a href="https://vcard-project.vercel.app" class="button" target="_blank">
+                        <i data-lucide="id-card" class="button-icon"></i>
+                        <span class="button-text">Kontakt Elyaagoubi</span>
+                    </a>
                 </div>
 
-                <button class="info_more-btn" data-sidebar-btn>
-                    <span>Kontaktoptionen</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="users" class="card-icon"></i>
+                    </div>
+                    <h3 class="contact-card-name">Schlobben</h3>
+                    <p class="contact-card-role">Abteilungsleiter</p>
+                    <p class="contact-card-desc">Kontaktieren Sie unseren Abteilungsleiter für operative Fragen und Projektkoordination.</p>
+                    <a href="https://zoman-vcard2.vercel.app" class="button" target="_blank">
+                        <i data-lucide="id-card" class="button-icon"></i>
+                        <span class="button-text">Kontakt Schlobben</span>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="headphones" class="card-icon"></i>
+                    </div>
+                    <h3 class="contact-card-name">Support</h3>
+                    <p class="contact-card-role">Kundenservice</p>
+                    <p class="contact-card-desc">Unser Support-Team steht Ihnen für allgemeine Anfragen und technische Unterstützung zur Verfügung.</p>
+                    
+                    <div class="support-info">
+                        <div class="info-item">
+                            <i data-lucide="phone" class="info-icon-small"></i>
+                            <a href="tel:+4921516169939">+49 2151 6169939</a>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="mail" class="info-icon-small"></i>
+                            <a href="mailto:info@zoman-gebäudereinigung.de">info@zoman-gebäudereinigung.de</a>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="globe" class="info-icon-small"></i>
+                            <a href="https://www.xn--zoman-gebudereinigung-e2b.de/" target="_blank">www.zoman-gebäudereinigung.de</a>
+                        </div>
+                    </div>
+                    
+                    <a href="tel:+4921516169939" class="button">
+                        <i data-lucide="phone-call" class="button-icon"></i>
+                        <span class="button-text">Support kontaktieren</span>
+                    </a>
+                </div>
             </div>
-
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
-
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="mailto:info@zoman-gebäudereinigung.de" class="contact-link">info@zoman-gebäudereinigung.de</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Telefon</p>
-                            <a href="tel:+4921516169939" class="contact-link">+49 2151 6169939</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Standort</p>
-                            <address>Krefeld, Deutschland</address>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="separator"></div>
+            
+            <div class="divider"></div>
+            
+            <div class="description">
+                <strong>Ihr professioneller Reinigungspartner in Krefeld</strong>
+                Kontaktieren Sie uns für umfassende Reinigungsdienstleistungen für Gewerbe, Industrie und Privatkunden. 
+                Standort: Krefeld, Deutschland
             </div>
-        </aside>
-
-        <div class="main-content">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>Kontakt</button>
-                    </li>
-                </ul>
-            </nav>
-
-            <article class="contact active" data-page="contact">
-                <header>
-                    <h2 class="h2 article-title">Wählen Sie Ihren Ansprechpartner</h2>
-                </header>
-
-                <section class="contact-buttons">
-                    <div class="contact-card">
-                        <div class="contact-card-header">
-                            <div class="icon-box">
-                                <ion-icon name="person-outline"></ion-icon>
-                            </div>
-                            <h3 class="h3">Elyaagoubi</h3>
-                            <p class="role">Inhaber</p>
-                        </div>
-                        <div class="contact-card-body">
-                            <p>Kontaktieren Sie unseren Geschäftsführer direkt für alle geschäftlichen Anfragen und Partnerschaften.</p>
-                            <a href="https://vcard-project.vercel.app" class="contact-btn" target="_blank">
-                                <ion-icon name="card-outline"></ion-icon>
-                                <span>Kontakt Elyaagoubi</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-card-header">
-                            <div class="icon-box">
-                                <ion-icon name="people-outline"></ion-icon>
-                            </div>
-                            <h3 class="h3">Schlobben</h3>
-                            <p class="role">Abteilungsleiter</p>
-                        </div>
-                        <div class="contact-card-body">
-                            <p>Kontaktieren Sie unseren Abteilungsleiter für operative Fragen und Projektkoordination.</p>
-                            <a href="https://zoman-vcard2.vercel.app" class="contact-btn" target="_blank">
-                                <ion-icon name="card-outline"></ion-icon>
-                                <span>Kontakt Schlobben</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-card-header">
-                            <div class="icon-box">
-                                <ion-icon name="help-circle-outline"></ion-icon>
-                            </div>
-                            <h3 class="h3">Support</h3>
-                            <p class="role">Kundenservice</p>
-                        </div>
-                        <div class="contact-card-body">
-                            <p>Unser Support-Team steht Ihnen für allgemeine Anfragen und technische Unterstützung zur Verfügung.</p>
-                            <div class="support-info">
-                                <div class="support-item">
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <a href="tel:+4921516169939">+49 2151 6169939</a>
-                                </div>
-                                <div class="support-item">
-                                    <ion-icon name="mail-outline"></ion-icon>
-                                    <a href="mailto:info@zoman-gebäudereinigung.de">info@zoman-gebäudereinigung.de</a>
-                                </div>
-                            </div>
-                            <a href="tel:+4921516169939" class="contact-btn support-btn">
-                                <ion-icon name="call-outline"></ion-icon>
-                                <span>Support kontaktieren</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
         </div>
-    </main>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        // Sidebar toggle functionality
-        const sidebar = document.querySelector("[data-sidebar]");
-        const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-        sidebarBtn.addEventListener("click", function () {
-            sidebar.classList.toggle("active");
-        });
-    </script>
+    </div>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
 </body>
 </html>
